@@ -1,10 +1,18 @@
 import "./App.css";
 import {Routes, Route} from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import { useState } from "react";
 
 function App() {
+  const [isLoggedIn , setisLoggedIn] = useState(false);
+
   return (
     <div>
-      <Navbar/>
+      <Navbar isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn} />
 
       <Routes>
         <Route path="/" elements={<Home/>} />
@@ -15,7 +23,7 @@ function App() {
 
     </div>
             
-  )
+  );
 }
 
 export default App;
