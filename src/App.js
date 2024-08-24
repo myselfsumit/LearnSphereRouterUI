@@ -8,11 +8,11 @@ import Dashboard from "./pages/Dashboard";
 import { useState } from "react";
 
 function App() {
-  const [isLoggedIn , setisLoggedIn] = useState(false);
+  const [isLoggedIn , setIsLoggedIn] = useState(false);
 
   return (
     <div>
-      <Navbar isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn} />
+      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
       <Routes>
         <Route path="/" elements={<Home/>} />
