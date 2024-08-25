@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react'
 
 const Dashboard = () => {
   return (
-  <div className="flex justify-center items-center"> Welcome to LearnSphere</div>
-)
-};
+    <div className='flex justify-center items-center text-richblack-5 text-3xl h-full'>
+      Welcome to LearnSphere
+    </div>
+  )
+}
 
-export default Dashboard;
+export default Dashboard
